@@ -29,7 +29,7 @@ services:
 
   db:
     container_name: misp_db
-    image: mysql/8.0-aarch64
+    image: mysql/mysql-server:8.0-aarch64
     restart: unless-stopped
     volumes:
       - ${DATA_DIR}/db:/var/lib/mysql
